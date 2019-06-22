@@ -1,0 +1,140 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.btn {
+    font-size: 14px;
+    padding: 8px 0;
+    width: 150px;
+    text-align: center;
+    border: 0.1rem solid #45ec6f;
+    margin-top: 30px;
+    text-decoration: none;
+    color: #333;
+    background-color: white;
+    border-radius: 1rem;
+    font-size: 24px;
+}
+
+.game-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#game-tools {
+    background-color: rgba(0, 0, 0, 0.85);
+    width: 200px;
+    height: 100vh;
+
+}
+
+#game-board {
+    background-color: rgba(22, 178, 189, 0);
+    width: 660px;
+    height: 100vh;
+    margin: 0 auto;
+
+}
+
+.box {
+    height: 33px;
+    width: 33px;
+    background-size: contain;
+    display: inline-block;
+    margin-right: 0;
+    vertical-align: top;
+}
+
+.box:hover {
+    border: 1px #8dbfff solid;
+}
+
+.sky {
+    background-color: #8dbfff;
+}
+
+.cloud {
+    background-color: #ffffff;
+}
+
+.dirt {
+    background-image: url('../images/dirt.png');
+}
+
+.rock {
+    background-image: url('../images/rock.png');
+}
+
+.grass {
+    background-image: url('../images/grass.png');
+}
+
+.leaf {
+    background-image: url('../images/leaf.png');
+}
+
+.tree {
+    background-image: url('../images/tree.png');
+}
+
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(35, 160, 62, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
+
+.game-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    color: #3dc4c4;
+}
+
+.game-overlay.visible {
+    background: url('../images/minecraft.jpg')no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tool-item {
+    border: 1px solid #f4f4f4;
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    background-color: rgb(52, 82, 4);
+
+}
+
+.tool-item img {
+    width: 80px;
+    height: 80px;
+}
+
+.toolSelected {
+    background-color: blue;
+}
+
+.incorrectSelection {
+    background-color: red;
+}
+
+.selectedItem {
+    border: 1px solid #f4f4f4;
+
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+
+}
